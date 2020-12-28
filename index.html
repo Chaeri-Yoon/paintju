@@ -3,10 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PaintJS</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/1aa037c88d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Paint</title>
   </head>
   <body>
+    <canvas id="jsCanvas" class="canvas"></canvas>
+    <div class="jsButtons buttons">
+      <div class="jsPaintAndSave paintAndSave">
+        <button class="jsBtnMode btn__mode">Fill</button>
+        <button class="jsBtnSave btn__save">Save</button>
+      </div>
+      <div class="jsPalette palette">
+        <div class="jsColorButtons colorbuttons">
+          <button
+            class="jsBtnColor btn__color"
+            style="background-color: #fe0303"
+          ></button>
+          <button
+            class="jsBtnColor btn__color"
+            style="background-color: #fe6a03"
+          ></button>
+          <button
+            class="jsBtnColor btn__color"
+            style="background-color: #fefe03"
+          ></button>
+          <button
+            class="jsBtnColor btn__color"
+            style="background-color: #30fc00"
+          ></button>
+          <button
+            class="jsBtnColor btn__color"
+            style="background-color: #006cfc"
+          ></button>
+          <button
+            class="jsBtnColor btn__color"
+            style="background-color: #0000fc"
+          ></button>
+          <button
+            class="jsBtnColor btn__color"
+            style="background-color: #cb3ccb"
+          ></button>
+        </div>
+        <button class="jsBtnEraser btn__eraser">
+          <i class="fa fa-2x fa-eraser"></i>
+        </button>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
